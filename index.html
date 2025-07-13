@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of EngDevOsama.dev - Engineer and Developer specializing in Software, Embedded Systems, and IoT Solutions.">
+    <title>EngDevOsama.dev | Engineer & Developer Portfolio</title>
+    <link rel="stylesheet" href="assests\css\styles.css">
+    <script defer src="assests\js\script.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="container nav-container">
+            <a href="#" class="logo">EngDevOsama.dev</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <!--  <li><a href="#resume" class="nav-link">Resume</a></li>-->
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container hero-content">
+            <h1>Engineering the Future with Code</h1>
+            <p>Hi, I'm Osama – an engineer and developer passionate about building innovative solutions in software, embedded systems, and IoT.</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
+        </div>
+    </header>
+
+    <!-- Skills/Services Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>My Skills & Services</h2>
+            <div class="skills-cards">
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>Software Development</h3>
+                    <p>Building robust web and desktop applications with modern technologies and best practices.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-microchip skill-icon"></i>
+                    <h3>Embedded Systems</h3>
+                    <p>Designing and programming microcontroller-based systems for real-world applications.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired skill-icon"></i>
+                    <h3>IoT Solutions</h3>
+                    <p>Connecting devices and data to create smart, scalable, and secure IoT ecosystems.</p>
+                </div>
+                <!-- Added Cloud Engineering -->
+                <div class="skill-card">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3>Cloud Engineering</h3>
+                    <p>Deploying and managing scalable cloud infrastructure and services for modern applications.</p>
+                </div>
+                <!-- Added Solutions Engineering -->
+                <div class="skill-card">
+                    <i class="fas fa-lightbulb skill-icon"></i>
+                    <h3>Solutions Engineering</h3>
+                    <p>Designing end-to-end engineering solutions tailored to client needs and business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="assests\image\Me_1.jpg" alt="Profile picture of Osama" />
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I'm Osama, an engineer and developer with a passion for solving complex problems and creating impactful technology. With experience in software development, embedded systems, Ai and IoT, I thrive on turning ideas into reality. Let's build something amazing together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Selected Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assests\image\fuel station.jpg" alt="Project 1 Screenshot" />
+                    <h3>Smart Fuel Station</h3>
+                    <p>Developed a scalable Embedded systems & IoT platform for smart fuel station with real-time monitoring and control.</p>
+                    <a href="https://github.com/EngDevOsama/smart-home" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="assests\image\Bank system.png" alt="Project 2 Screenshot" />
+                    <h3>Banking system simulation</h3>
+                    <p>Designed and programmed a Banking system simulation using Arena simulation </p>
+                    <a href="https://github.com/EngDevOsama/weather-station" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="assests\image\Solar.jpg" alt="Project 3 Screenshot" />
+                    <h3>Solar Tracking</h3>
+                    <p>Smart tracking of the Sunlight to store more energy</p>
+                    <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                </div>
+                <!-- Add New Project Card -->
+               <!-- <div class="project-card add-project-card">
+                    <div class="add-project-content">
+                        <i class="fas fa-plus-circle" style="font-size:2.5rem;color:#0077b6;"></i>
+                        <h3>Add New Project</h3>
+                        <button type="button" class="btn-primary" onclick="addNewProject()">Add Project</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" autocomplete="off">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required aria-required="true" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required aria-required="true" />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/osama-mohammed-846b00260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/eng-osm" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/osamah777560317?t=C0uevInFUDpzcxFab66Vsg&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 EngDevOsama.dev. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
